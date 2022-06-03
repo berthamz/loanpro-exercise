@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../src/styles.scss" />
+    <link rel="stylesheet" href="https://css.loanpro.io/dist/lp.css" />
+    <link rel="stylesheet" href="exercise4.scss" />
+  </head>
+
+  <body class="lp">
+    <header class="bg-blue-dark text-white">
+      <div class="bg-aqua text-white p-half text-center">
+        <a href="#" class="text-white text-hover-dark"
+          >Trial and discount expire in 49 day(s).</a
+        >
+      </div>
+      <section class="wrapper ly-row ly-spacebetween-center pt-2 pb-2">
+        <div class="w-30 ly-row">
+          <picture class="w-30 icon-round-xl">
+            <img src="https://i.pravatar.cc/100" alt="Placeholder Avatar" />
+          </picture>
+          <div class="w-70 ly-col ly-center-start">
+            <p class="h5 font-weight-medium">Wilfrido Serrano</p>
+            <p
+              class="bg-warning text-white font-weight-medium text-uppercase p-half rounded-sm"
+            >
+              Warning
+            </p>
+          </div>
+        </div>
+        <nav class="w-50 ly-row ly-end-center">
+          <ul class="menu-h">
+            <li class="h6 text-transform-none font-weight-regular">
+              <a href="#" class="text-white text-hover-orange-muted">Profile</a>
+            </li>
+            <li class="h6 text-transform-none font-weight-regular">
+              <a href="#" class="text-white text-hover-orange-muted">Loans</a>
+            </li>
+            <li class="h6 text-transform-none font-weight-regular">
+              <a href="#" class="text-white text-hover-orange-muted">Account</a>
+            </li>
+            <li class="h6 text-transform-none font-weight-regular">
+              <a href="#" class="text-white text-hover-orange-muted"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="wrapper">
+      <div class="ly-row ly-spacebetween-center mt-2 mb-2">
+        <h3 class="m-0">Loans</h3>
+        <a href="#" class="btn btn-primary px-1">Add Loan</a>
+      </div>
+      <section class="bg-white p-2">
+        <header class="ly-row ly-start-center mb-2">
+          <div>
+            <label class="h6 text-transform-none font-weight-light"
+              >Filter 1</label
+            >
+            <input
+              type="text"
+              placeholder="Placeholder Text"
+              class="rounded-sm bg-gray-medium mt-half"
+            />
+          </div>
+          <div class="mr-auto">
+            <label class="h6 text-transform-none font-weight-light"
+              >Filter 2</label
+            >
+            <input
+              type="text"
+              placeholder="Placeholder Text"
+              class="rounded-sm bg-gray-medium mt-half"
+            />
+          </div>
+          <a href="#" class="btn px-1">Clear Filters</a>
+        </header>
+        <section>
+          <h5>0 results</h5>
+          <div>
+            <table class="datatabe w-100 text-left rounded-sm">
+              <thead>
+                <tr>
+                  <th class="w-25">ID</th>
+                  <th class="w-15">NAME</th>
+                  <th class="w-15">ACCOUNT</th>
+                  <th class="w-15">BALANCE</th>
+                  <th class="w-15">STATUS</th>
+                  <th class="w-15">DAYS PAST DUE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2</td>
+                  <td>Roy Rogers</td>
+                  <td>11234</td>
+                  <td>$43,5343.00</td>
+                  <td><div class="tag tag-success">Active</div></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Seth Sanchez</td>
+                  <td>01238</td>
+                  <td>$867,543.00</td>
+                  <td><div class="tag">Inactive</div></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Bruce Banner</td>
+                  <td>11205</td>
+                  <td>$12,493.00</td>
+                  <td><div class="tag tag-success">Active</div></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Fermin Vilches</td>
+                  <td>10030</td>
+                  <td>$259,278.00</td>
+                  <td><div class="tag tag-success">Active</div></td>
+                  <td>14</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

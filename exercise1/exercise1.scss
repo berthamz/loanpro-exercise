@@ -1,0 +1,54 @@
+@import "configs.scss";
+
+.grid {
+  display: grid;
+  gap: $grid-gap;
+  padding: $grid-gap;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #f8f8f8;
+}
+
+@for $i from 1 through $total-columns {
+  .grid.cols-#{$i} {
+    grid-template-columns: repeat($i, 1fr);   
+  }
+
+  .col-#{$i} {
+      grid-column: span $i;
+  }
+
+  .sm-#{$i} {
+    @include mobile {
+      grid-column: span $i;
+    }
+  }
+
+  .md-#{$i} {
+    @include tablet {
+      grid-column: span $i;
+    }
+  }
+
+  .lg-#{$i} {
+    @include desktop {
+      grid-column: span $i;
+    }
+  }
+}
+
+
+@for $i from 1 through 6 {
+  .row-#{$i} {
+    grid-row: span $i;
+  }
+}
+
+.grid > div {
+  line-height: 20px;
+  padding: $grid-gap;
+  text-align: center;
+  background: #e5eff6;
+  border-radius: $grid-gap;
+  border: 1px solid #cfdbe4;
+}

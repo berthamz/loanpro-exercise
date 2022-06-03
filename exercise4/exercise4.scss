@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  border: 0;
+  background: #f2f4f6;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-blue-dark {
+  background-color: #27313f;
+}
+
+.lp header .h5:not(:last-child) {
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+
+.lp table.datatabe {
+  outline: 1px solid #deeaf1;
+
+  tbody tr {
+    border-top: 1px solid #deeaf1;
+  }
+
+  th, td {
+    padding: 1rem;
+  }
+}

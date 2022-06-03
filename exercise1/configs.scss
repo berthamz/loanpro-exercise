@@ -1,0 +1,22 @@
+$total-columns: 12;
+$grid-gap: 10px;
+$mobile: 720px;
+$desktop: 1020px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: calc(#{$mobile} + 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

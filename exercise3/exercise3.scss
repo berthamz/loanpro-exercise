@@ -1,0 +1,42 @@
+$light-blue: #33a8fd;
+$dark-blue: #016fbe;
+
+a {
+  position: relative;
+  font-size: 55px;
+  color: #011e33;
+  background: linear-gradient($light-blue, $dark-blue);
+  border-radius: 50%;
+  line-height: 220px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 2px 0 rgba(white, 0.4);
+  z-index: 0;
+  transition: text-shadow 0.2s ease;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient($dark-blue, $light-blue);
+    z-index: -1;
+    top: 40px;
+    left: 40px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    text-shadow: 0 -2px 0 rgba(white, 0.4);
+    background: linear-gradient($dark-blue, $light-blue);
+
+    &:before {
+      background: linear-gradient($light-blue, $dark-blue);
+    }
+  }
+}

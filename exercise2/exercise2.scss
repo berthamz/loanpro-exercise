@@ -1,0 +1,46 @@
+@import "configs.scss";
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $flex-gap;
+  padding: $flex-gap;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #f8f8f8;
+}
+
+.flex div {
+  line-height: 20px;
+  padding: $flex-gap;
+  text-align: center;
+  background: #e5eff6;
+  border-radius: $flex-gap;
+  border: 1px solid #cfdbe4;
+  flex-basis: calc((100% / #{$total-columns}) - 32px);
+}
+
+@for $i from 1 through $total-columns {
+  $row-calculation: calc(((100% / #{$total-columns}) * #{$i}) - 32px);
+
+  .flex div.col-#{$i} {
+    flex-basis: $row-calculation;
+  }
+
+  .flex div.sm-#{$i} {
+    @include mobile {
+      flex-basis: $row-calculation;
+    }
+  }
+
+  .flex div.md-#{$i} {
+    @include tablet {
+      flex-basis: $row-calculation;
+    }
+  }
+
+  .flex div.lg-#{$i} {
+    @include desktop {
+      flex-basis: $row-calculation;
+    }
+  }}
